@@ -23,6 +23,9 @@ watch(route, (route) => {
     <AMenuItem key="/home">
       Home
     </AMenuItem>
+    <AMenuItem key="/category">
+      Category
+    </AMenuItem>
     <AMenuItem key="/about">
       About
     </AMenuItem>

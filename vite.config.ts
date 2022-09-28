@@ -9,7 +9,7 @@ const localEnabled = process.env.USE_MOCK || false;
 
 // @ts-ignore module import problem
 const mockPlugin = localEnabled ? mockServer({
-  mockRootDir: './mock',
+  mockRootDir: './src/mock',
 }) : {} as Plugin;
 
 // https://vitejs.dev/config/
