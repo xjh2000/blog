@@ -9,6 +9,10 @@
 
 🍙 [vite](https://cn.vitejs.dev/) 百宝箱（整合插件功能）
 
+🍚 [element-plus](https://element-plus.gitee.io/zh-CN/) vue3 UI Lib
+
+🍵 [md-editor-v3](https://github.com/imzbf/md-editor-v3) markdown editor
+
 ## 后端技术栈
  
 🥩 [cloudbase](https://cloudbase.net/) 腾讯severless云开发
