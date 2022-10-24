@@ -1,10 +1,10 @@
 <template>
-  <basic-layout>
-    <nav-bar/>
-    <router-view/>
-  </basic-layout>
-
-
+  <div class="h-screen ">
+    <basic-layout>
+      <nav-bar/>
+      <router-view/>
+    </basic-layout>
+  </div>
 </template>
 
 <script setup lang="ts">

@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar bg-base-100">
+  <div class="navbar bg-secondary-content ">
     <div class="navbar-start">
       <div class="dropdown">
         <label @click="subMenuShow=true" tabindex="0" class="btn btn-ghost btn-circle">
@@ -9,7 +9,7 @@
           </svg>
         </label>
         <ul tabindex="0" v-show="subMenuShow"
-            class=" menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+            class=" bg-secondary-content menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box ">
           <li @click="subMenuShow=false">
             <router-link to="home">
               <a>Home</a>
@@ -25,10 +25,7 @@
       </div>
     </div>
     <div class="navbar-center">
-      <router-link to="home">
-        <a class="btn btn-ghost normal-case text-xl">Xjh Blog</a>
-      </router-link>
-
+      <a class="font-bold normal-case text-xl ">Xjh Blog</a>
     </div>
     <div class="navbar-end">
       <button class="btn btn-ghost btn-circle">

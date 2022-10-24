@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx,vue}",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
@@ -10,5 +10,8 @@ module.exports = {
   daisyui: {
     themes: ["light", "night", "synthwave"],
   },
-  plugins: [require("daisyui")],
-}
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("daisyui")
+  ],
+};

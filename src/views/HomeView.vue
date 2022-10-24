@@ -1,4 +1,8 @@
 <template>
+  <div class="bg-primary-content  h-full m-2 md:m-6 lg:m-8 xl:m-10">
+    <a> test</a>
+  </div>
+
 
 </template>
 
