@@ -6,9 +6,8 @@ import {db} from "../config/cloudbase";
 import MdEditor from 'md-editor-v3';
 import 'md-editor-v3/lib/style.css';
 
-
-
 const route = useRoute();
+
 const article = ref<Article>({
   content: '',
   _id: "",

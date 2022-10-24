@@ -9,20 +9,7 @@ const activeIndex = ref('/home');
 
 <template>
   <basic-layout>
-    <el-container>
-      <el-header>
-        <el-menu
-            mode="horizontal"
-            :router="true"
-        >
-          <el-menu-item route="/home">Home</el-menu-item>
-        </el-menu>
-      </el-header>
-      <el-main>
-        <router-view/>
-      </el-main>
-
-    </el-container>
+    <router-view/>
   </basic-layout>
 
 
