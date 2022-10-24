@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# Vue
+
+auto-imports.d.ts
+components.d.ts
