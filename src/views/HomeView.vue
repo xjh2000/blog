@@ -1,18 +1,8 @@
 <template>
 
-  <button class="btn" data-set-theme="night" data-act-class="ACTIVECLASS">
-    dark
-  </button>
-  <button class="btn" data-set-theme="light" data-act-class="ACTIVECLASS">
-    light
-  </button>
-  <button class="btn" data-set-theme="synthwave" data-act-class="ACTIVECLASS">
-    synthwave
-  </button>
 </template>
 
 <script setup lang="ts">
-
 
 import {onMounted, ref} from "vue";
 import {Article} from "../type/type";
