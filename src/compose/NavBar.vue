@@ -11,12 +11,12 @@
         <ul tabindex="0" v-show="subMenuShow"
             class=" bg-secondary-content menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box ">
           <li @click="subMenuShow=false">
-            <router-link to="home">
+            <router-link to="/home">
               <a>Home</a>
             </router-link>
           </li>
           <li @click="subMenuShow=false">
-            <router-link to="articles">
+            <router-link to="/articles">
               <a>Articles</a>
             </router-link>
           </li>
