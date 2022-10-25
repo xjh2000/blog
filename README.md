@@ -9,9 +9,11 @@
 
 🍙 [vite](https://cn.vitejs.dev/) 百宝箱（整合插件功能）
 
-🍚 [element-plus](https://element-plus.gitee.io/zh-CN/) vue3 UI Lib
+🍚 [daisyui](https://daisyui.com/) Tailwind CSS 组件库 有点美
 
-🍵 [md-editor-v3](https://github.com/imzbf/md-editor-v3) markdown editor
+🍵 [marked](https://marked.js.org/) markdown to html
+
+🥣[clipboard](https://clipboardjs.com/) 一键复制
 
 ## 后端技术栈
  

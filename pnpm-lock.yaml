@@ -13,7 +13,6 @@ specifiers:
   highlight.js: ^11.6.0
   less: ^4.1.3
   marked: ^4.1.1
-  md-editor-v3: ^2.3.0
   pinia: ^2.0.23
   postcss: ^8.4.18
   tailwindcss: ^3.2.1
@@ -32,7 +31,6 @@ dependencies:
   daisyui: 2.33.0_xkowlklhtk6sfvtndbucb3hfiy
   highlight.js: 11.6.0
   marked: 4.1.1
-  md-editor-v3: 2.3.0
   pinia: 2.0.23_bfjwoga25wxjazzogo7o372nwq
   theme-change: 2.2.0
   vue: 3.2.40
@@ -1465,6 +1463,7 @@ packages:
 
   /@types/marked/4.0.7:
     resolution: {integrity: sha512-eEAhnz21CwvKVW+YvRvcTuFKNU9CV1qH+opcgVK3pIMI6YZzDm6gc8o2vHjldFk6MGKt5pueSB7IOpvpx5Qekw==}
+    dev: true
 
   /@types/node/18.11.5:
     resolution: {integrity: sha512-3JRwhbjI+cHLAkUorhf8RnqUbFXajvzX4q6fMn5JwkgtuwfYtRQYI3u4V92vI6NJuTsbBQWWh3RZjFsuevyMGQ==}
@@ -2843,13 +2842,6 @@ packages:
     resolution: {integrity: sha512-0cNMnTcUJPxbA6uWmCmjWz4NJRe/0Xfk2NhXCUHjew9qJzFN20krFnsUe7QynwqOwa5m1fZ4UDg0ycKFVC0ccw==}
     engines: {node: '>= 12'}
     hasBin: true
-    dev: false
-
-  /md-editor-v3/2.3.0:
-    resolution: {integrity: sha512-HZiOSwOct3YsuTtsTucEg5o9mSRkgnazVn2sTInjG+d+zlMQE6iCMmDyGICBoh5Im0kmX2Pf6Sxhz6qp/0XngQ==}
-    engines: {node: '>=12.0.0'}
-    dependencies:
-      '@types/marked': 4.0.7
     dev: false
 
   /merge-stream/2.0.0:
