@@ -1,13 +1,5 @@
-import {createApp} from 'vue'
+import { createApp } from 'vue'
 import './style.css'
-import App from './App.vue';
-import {routerConfig} from "./config/routerConfig";
-import piniaConfig from "./config/piniaConfig";
+import App from './App.vue'
 
-
-let app = createApp(App);
-
-app.use(routerConfig);
-app.use(piniaConfig);
-
-app.mount('#app')
+createApp(App).mount('#app')
