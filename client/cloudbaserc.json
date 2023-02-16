@@ -8,8 +8,8 @@
       "web": {
         "use": "@cloudbase/framework-plugin-website",
         "inputs": {
-          "installCommand": "npm install --prefer-offline --no-audit --progress=false",
-          "buildCommand": "npm run build",
+          "installCommand": "pnpm install --prefer-offline --no-audit --progress=false",
+          "buildCommand": "pnpm run build",
           "outputPath": "dist",
           "ignore": [".git", ".github", "node_modules", "cloudbaserc.js"]
         }
