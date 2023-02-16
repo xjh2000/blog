@@ -6,6 +6,10 @@ on:
     tags:
       - 'v*'
 
+defaults:
+  run:
+    shell: bash
+    working-directory: ./client
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -29,4 +33,3 @@ jobs:
           secretId: ${{secrets.SECRET_ID}}
           secretKey: ${{secrets.SECRET_KEY}}
           envId: ${{secrets.ENV_ID}}
-        working-directory: ./client
