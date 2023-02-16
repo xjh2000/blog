@@ -31,7 +31,7 @@ jobs:
           SECRET_ID: ${{secrets.SECRET_ID}}
           SECRET_KEY: ${{secrets.SECRET_KEY}}
         run: |
-          cd client
+          cd ./client
           sudo npm install -g @cloudbase/cli --loglevel=error --no-fund --no-audit --no-progress --prefer-offline
           tcb login --apiKeyId "$SECRET_ID" --apiKey "$SECRET_KEY"
           tcb framework deploy -e "$ENV_ID"
