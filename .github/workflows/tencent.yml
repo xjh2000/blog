@@ -16,9 +16,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - name: change to client folder
-        run: |
-          cd client
+
       # Runs a single command using the runners shell
       - name: Tencent CloudBase Github Action
         uses: TencentCloudBase/cloudbase-action@v2
@@ -30,3 +28,5 @@ jobs:
           secretId: ${{secrets.SECRET_ID}}
           secretKey: ${{secrets.SECRET_KEY}}
           envId: ${{secrets.ENV_ID}}
+        run: |
+          cd client
