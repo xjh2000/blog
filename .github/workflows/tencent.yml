@@ -23,15 +23,18 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
 
       # Runs a single command using the runners shell
-      - name: Tencent CloudBase Github Action
-        uses: TencentCloudBase/cloudbase-action@v2
+      - name: Tencent CloudBase update
         env:
           ENV_ID: ${{secrets.SECRET_ID}}
           SECRET_ID: ${{secrets.SECRET_ID}}
           SECRET_KEY: ${{secrets.SECRET_KEY}}
-        with:
-          secretId: ${{secrets.SECRET_ID}}
-          secretKey: ${{secrets.SECRET_KEY}}
-          envId: ${{secrets.ENV_ID}}
+        run: |
+          sudo npm install -g @cloudbase/cli --loglevel=error 
+          tcb login --apiKeyId "$SECRET_ID" --apiKey "$SECRET_KEY"
+          tcb framework deploy -e "$ENV_ID"
