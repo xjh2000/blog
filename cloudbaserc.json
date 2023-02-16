@@ -1,0 +1,20 @@
+{
+  "envId": "{{env.ENV_ID}}",
+  "$schema": "https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
+  "version": "2.0",
+  "framework": {
+    "name": "blog",
+    "plugins": {
+      "web": {
+        "use": "@cloudbase/framework-plugin-website",
+        "inputs": {
+          "installCommand": "pnpm install --prefer-offline --no-audit --progress=false",
+          "buildCommand": "pnpm run build",
+          "outputPath": "dist",
+          "ignore": [".git", ".github", "node_modules", "cloudbaserc.js"]
+        }
+      }
+    }
+  },
+  "region": "ap-shanghai"
+}
