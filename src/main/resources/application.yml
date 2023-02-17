@@ -1,8 +1,0 @@
-logging:
-  level:
-    org:
-      springframework:
-        web: warn
-server:
-  servlet:
-    context-path: /api/v1
