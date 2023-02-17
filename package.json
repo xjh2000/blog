@@ -1,7 +1,7 @@
 {
-  "name": "think-js",
+  "name": "blog",
   "version": "1.1.1",
-  "description": "This is a node framework based on koa2 encapsulation.",
+  "description": "This is a blog use base on think js",
   "main": "index.js",
   "_moduleAliases": {
     "@": "app",
@@ -13,7 +13,7 @@
     "dev": "nodemon index.js",
     "start": "pm2 start index.js -i 3 --name='$npm_package_name'"
   },
-  "author": "zhangyu",
+  "author": "xjh",
   "license": "ISC",
   "dependencies": {
     "@alicloud/sms-sdk": "^1.1.6",
