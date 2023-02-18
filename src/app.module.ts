@@ -7,9 +7,9 @@ import * as process from 'process';
 
 const mongodbUri =
   process.env.NODE_ENV === 'production'
-    ? 'mongodb://mongo:27017'
-    : 'mongodb://192.168.2.101:27017';
-
+    ? 'mongodb://mongo:27017/blog/?authSource=admin'
+    : 'mongodb://192.168.2.101:27017/blog/?authSource=admin';
+console.log(mongodbUri);
 @Module({
   imports: [
     UsersModule,
