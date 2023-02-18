@@ -1,14 +1,17 @@
-import { BadRequestException, Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
+import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
+import { User, UserDocument } from './entities/user.entity';
 
 @Injectable()
 export class UsersService {
-  create(createUserDto: CreateUserDto) {
-    // throw new BadRequestException({ detail: 'the user haven been register' });
-    throw new BadRequestException('the user haven been register');
+  constructor(@InjectModel('User') private userModel: Model<UserDocument>) {}
 
-    return 'This action adds a new user';
+  async create(createUserDto: CreateUserDto): Promise<User> {
+    const createUser = new this.userModel(createUserDto);
+    return createUser.save();
   }
 
   findAll() {
