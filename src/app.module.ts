@@ -7,7 +7,7 @@ import * as process from 'process';
 
 const mongodbUri =
   process.env.NODE_ENV === 'production'
-    ? 'mongodb://localhost:27017'
+    ? 'mongodb://mongo:27017'
     : 'mongodb://192.168.2.101:27017';
 
 @Module({
